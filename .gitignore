@@ -24,7 +24,7 @@ frontend/dist/
 *.pt
 *.onnx
 *.torchscript
-data/videos_bundle*.zip
+*.zip
 ml/test_road_frame.jpg
 
 # SQLite database local locks
