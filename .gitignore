@@ -1,0 +1,38 @@
+# Node dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Python cache & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+venv/
+env/
+.venv/
+
+# Build outputs
+dist/
+build/
+frontend/dist/
+
+# Large model weights (downloaded automatically at runtime)
+*.pt
+*.onnx
+*.torchscript
+data/videos_bundle*.zip
+ml/test_road_frame.jpg
+
+# SQLite database local locks
+*.db-journal
+
+# OS & Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log

@@ -1,0 +1,17 @@
+{
+  "hazard_precision": 1.0,
+  "hazard_recall": 0.5556,
+  "false_alarms_per_day": 0.0,
+  "r2_score": 0.9623,
+  "mse": 5.5939,
+  "congestion_accuracy": 0.9933,
+  "dataset_size": 7500,
+  "top_global_shap_factors": [
+    "close_call_count",
+    "avg_speed_kmh",
+    "road_damage_severity",
+    "distance_to_school_m",
+    "distance_to_hospital_m"
+  ],
+  "provenance": "DEMO / SYNTHETIC EVALUATION"
+}

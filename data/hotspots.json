@@ -1,0 +1,416 @@
+[
+  {
+    "id": "HS-01",
+    "name": "Silk Board Merge Junction",
+    "lat": 12.9172,
+    "lng": 77.6228,
+    "junction_type": "Merge Intersection",
+    "road_type_code": 0,
+    "road_type": "Arterial Highway",
+    "lanes": 6,
+    "distance_to_school_m": 310.0,
+    "school_name": "Silk Board Primary Academy",
+    "distance_to_hospital_m": 240.0,
+    "hospital_name": "St. John's Medical College Hospital",
+    "status": "PENDING_APPROVAL",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "current_risk_score": 78.4,
+    "current_risk_class": "High / Critical",
+    "current_congestion": "Congested",
+    "baseline_metrics": {
+      "close_calls_per_1000": 11.4,
+      "avg_approach_speed_kmh": 58.2,
+      "max_queue_length_m": 125.0
+    },
+    "post_intervention_projection": {
+      "projected_risk_score": 48.2,
+      "projected_close_calls_per_1000": 4.1,
+      "estimated_risk_reduction_pct": 38.5
+    },
+    "telemetry": {
+      "vehicle_count": 92,
+      "avg_speed_kmh": 56.4,
+      "queue_length_m": 118.0,
+      "pedestrian_count": 68,
+      "close_call_count": 6,
+      "rain_intensity_mmh": 0.0,
+      "visibility_meters": 3200.0,
+      "hour_of_day": 17,
+      "road_damage_severity": 1,
+      "is_school_hour": 0,
+      "road_closure_active": 0,
+      "construction_active": 0,
+      "camera_status": "ONLINE",
+      "contrast_index": 72.4,
+      "brightness_index": 68.1
+    },
+    "evidence_sources": [
+      {
+        "type": "CAMERA_FEED",
+        "source_id": "CAM-BLR-041",
+        "timestamp": "2026-10-31T11:15:00Z",
+        "factor": "close_call_count",
+        "metric_value": "6 conflicts / 5 min",
+        "anonymized": true,
+        "clip_ref": "clip_silkboard_agg.mp4"
+      },
+      {
+        "type": "RADAR_TELEMETRY",
+        "source_id": "RAD-BLR-019",
+        "timestamp": "2026-10-31T11:18:20Z",
+        "factor": "avg_speed_kmh",
+        "metric_value": "56.4 km/h (Limit: 40 km/h)",
+        "anonymized": true,
+        "clip_ref": "speed_sensor_log_041.json"
+      },
+      {
+        "type": "OSM_OVERPASS",
+        "source_id": "NODE-OSM-592819",
+        "timestamp": "2026-10-31T06:00:00Z",
+        "factor": "distance_to_hospital_m",
+        "metric_value": "240m to St. John's Hospital",
+        "anonymized": true,
+        "clip_ref": "osm_cache_hs01.json"
+      }
+    ],
+    "top_factors": [
+      {"factor": "close_call_count", "label": "Pedestrian-Vehicle Conflicts", "shap_value": 5.82, "direction": "+Risk"},
+      {"factor": "avg_speed_kmh", "label": "Excessive Merge Speed", "shap_value": 3.91, "direction": "+Risk"},
+      {"factor": "queue_length_m", "label": "Spillback Bottleneck", "shap_value": 2.74, "direction": "+Risk"}
+    ],
+    "recommendation": {
+      "rule_id": "INT-001",
+      "title": "Install Raised Pedestrian Table & Active Pedestrian Refuge",
+      "category": "Infrastructure",
+      "estimated_risk_reduction_pct": 34.5,
+      "why_dangerous": "High density of vulnerable pedestrians crossing in unprotected traffic streams with approach vehicle speeds exceeding safe braking distance.",
+      "recommended_fix": "Construct a 100mm raised tabletop zebra crossing with high-visibility thermoplastic markings, refuge island, and solar-powered flashing pedestrian beacons.",
+      "verification_metric": "Pre vs post close-call events per 1,000 pedestrian crossings via automated zone conflict monitoring.",
+      "assumption": "Assumes standard driver compliance with raised crossings as documented in IRC:99-2018 guidelines."
+    },
+    "public_warning_tag": "High Pedestrian Conflicts - Slow Down",
+    "responsible_body": "Bruhat Bengaluru Mahanagara Palike (BBMP) Major Roads"
+  },
+  {
+    "id": "HS-02",
+    "name": "Marathahalli Multiplex Crossing",
+    "lat": 12.9553,
+    "lng": 77.7011,
+    "junction_type": "Signalized Multi-leg",
+    "road_type_code": 4,
+    "road_type": "Multi-leg Unsignalized",
+    "lanes": 6,
+    "distance_to_school_m": 110.0,
+    "school_name": "Varthur Govt High School",
+    "distance_to_hospital_m": 420.0,
+    "hospital_name": "Yashomati Multi-Speciality Hospital",
+    "status": "APPROVED",
+    "approved_by": "Officer Rajesh K. (ID #4092)",
+    "approved_at": "2026-10-31T09:30:00Z",
+    "rejection_reason": null,
+    "current_risk_score": 84.2,
+    "current_risk_class": "High / Critical",
+    "current_congestion": "Gridlock",
+    "baseline_metrics": {
+      "close_calls_per_1000": 16.8,
+      "avg_approach_speed_kmh": 48.0,
+      "max_queue_length_m": 160.0
+    },
+    "post_intervention_projection": {
+      "projected_risk_score": 52.0,
+      "projected_close_calls_per_1000": 5.2,
+      "estimated_risk_reduction_pct": 38.2
+    },
+    "telemetry": {
+      "vehicle_count": 115,
+      "avg_speed_kmh": 46.8,
+      "queue_length_m": 142.0,
+      "pedestrian_count": 132,
+      "close_call_count": 8,
+      "rain_intensity_mmh": 0.0,
+      "visibility_meters": 4500.0,
+      "hour_of_day": 14,
+      "road_damage_severity": 2,
+      "is_school_hour": 1,
+      "road_closure_active": 0,
+      "construction_active": 0,
+      "camera_status": "ONLINE",
+      "contrast_index": 78.0,
+      "brightness_index": 74.0
+    },
+    "evidence_sources": [
+      {
+        "type": "CAMERA_FEED",
+        "source_id": "CAM-BLR-089",
+        "timestamp": "2026-10-31T14:10:00Z",
+        "factor": "pedestrian_count",
+        "metric_value": "132 pedestrians / 5 min (School Bell Peak)",
+        "anonymized": true,
+        "clip_ref": "clip_marathahalli_ped.mp4"
+      },
+      {
+        "type": "OSM_OVERPASS",
+        "source_id": "WAY-OSM-112093",
+        "timestamp": "2026-10-31T06:00:00Z",
+        "factor": "distance_to_school_m",
+        "metric_value": "110m to Varthur Govt High School",
+        "anonymized": true,
+        "clip_ref": "osm_cache_hs02.json"
+      }
+    ],
+    "top_factors": [
+      {"factor": "is_school_hour", "label": "School Bell-Time Peak", "shap_value": 6.12, "direction": "+Risk"},
+      {"factor": "close_call_count", "label": "Pedestrian Conflicts", "shap_value": 4.95, "direction": "+Risk"},
+      {"factor": "queue_length_m", "label": "Queue Spillback", "shap_value": 3.10, "direction": "+Risk"}
+    ],
+    "recommendation": {
+      "rule_id": "INT-005",
+      "title": "Activate Variable Speed Limit (VSL) 20 km/h & Crossing Marshal Protocol",
+      "category": "Traffic Police / Operational",
+      "estimated_risk_reduction_pct": 36.0,
+      "why_dangerous": "Surge of school children crossing concurrently with parent pick-up vehicular chaos creates dense blind-spot conflict vectors.",
+      "recommended_fix": "Auto-trigger dynamic flashing 20 km/h school signs during 07:30-08:45 and 14:00-15:30; deploy traffic warden at primary pedestrian gate.",
+      "verification_metric": "Zero near-miss collisions inside 200m school perimeter during 30-minute peak bell intervals.",
+      "assumption": "Calculated assuming 92% speed compliance when active flashing beacons and uniformed warden are visible."
+    },
+    "public_warning_tag": "Active School Zone - Strict 20 km/h",
+    "responsible_body": "Bengaluru Traffic Police (BTP) & BBMP"
+  },
+  {
+    "id": "HS-03",
+    "name": "MG Road Metro Boulevard Crossing",
+    "lat": 12.9756,
+    "lng": 77.6066,
+    "junction_type": "Signalized T-Junction",
+    "road_type_code": 1,
+    "road_type": "Collector Avenue",
+    "lanes": 4,
+    "distance_to_school_m": 280.0,
+    "school_name": "Bishop Cotton Boys' School",
+    "distance_to_hospital_m": 650.0,
+    "hospital_name": "Bowring Hospital",
+    "status": "APPROVED",
+    "approved_by": "Officer Ananya S. (ID #3188)",
+    "approved_at": "2026-10-30T18:00:00Z",
+    "rejection_reason": null,
+    "current_risk_score": 42.0,
+    "current_risk_class": "Medium",
+    "current_congestion": "Moderate",
+    "baseline_metrics": {
+      "close_calls_per_1000": 4.2,
+      "avg_approach_speed_kmh": 38.5,
+      "max_queue_length_m": 45.0
+    },
+    "post_intervention_projection": {
+      "projected_risk_score": 28.5,
+      "projected_close_calls_per_1000": 1.8,
+      "estimated_risk_reduction_pct": 32.1
+    },
+    "telemetry": {
+      "vehicle_count": 52,
+      "avg_speed_kmh": 36.0,
+      "queue_length_m": 42.0,
+      "pedestrian_count": 45,
+      "close_call_count": 1,
+      "rain_intensity_mmh": 0.0,
+      "visibility_meters": 6000.0,
+      "hour_of_day": 11,
+      "road_damage_severity": 0,
+      "is_school_hour": 0,
+      "road_closure_active": 0,
+      "construction_active": 0,
+      "camera_status": "ONLINE",
+      "contrast_index": 85.0,
+      "brightness_index": 82.0
+    },
+    "evidence_sources": [
+      {
+        "type": "CAMERA_FEED",
+        "source_id": "CAM-BLR-012",
+        "timestamp": "2026-10-31T11:00:00Z",
+        "factor": "vehicle_count",
+        "metric_value": "52 vehicles / 5 min",
+        "anonymized": true,
+        "clip_ref": "clip_mgroad.mp4"
+      }
+    ],
+    "top_factors": [
+      {"factor": "pedestrian_count", "label": "Transit Pedestrian Flow", "shap_value": 2.10, "direction": "+Risk"},
+      {"factor": "avg_speed_kmh", "label": "Urban Flow Speed", "shap_value": 1.45, "direction": "+Risk"}
+    ],
+    "recommendation": {
+      "rule_id": "INT-003",
+      "title": "Deploy High-Mast Warm-White LED Illumination & Class XI Retroreflective Signs",
+      "category": "Visibility & Lighting",
+      "estimated_risk_reduction_pct": 24.0,
+      "why_dangerous": "Inadequate ambient lighting and low contrast diminish driver hazard recognition distance below safe perception-reaction thresholds.",
+      "recommended_fix": "Erect 12m twin-arm LED lighting fixtures (minimum 40 lux on road surface) and upgrade all intersection guide signs to microprismatic diamond-grade sheeting.",
+      "verification_metric": "Photometric lux audit (>35 lux uniform) and night-time near-miss conflict rates.",
+      "assumption": "Visibility risk correlation assumes normal reaction time increases by 0.7s in unlit wet conditions."
+    },
+    "public_warning_tag": "Metro Pedestrian Crossing - Be Alert",
+    "responsible_body": "BBMP Electrical & Streetlight Division"
+  },
+  {
+    "id": "HS-04",
+    "name": "Koramangala 80ft Road Junction",
+    "lat": 12.9352,
+    "lng": 77.6245,
+    "junction_type": "Unsignalized 4-way",
+    "road_type_code": 1,
+    "road_type": "Collector Avenue",
+    "lanes": 4,
+    "distance_to_school_m": 180.0,
+    "school_name": "Chinmaya Vidyalaya",
+    "distance_to_hospital_m": 150.0,
+    "hospital_name": "Apollo Clinic Koramangala",
+    "status": "PENDING_APPROVAL",
+    "approved_by": null,
+    "approved_at": null,
+    "rejection_reason": null,
+    "current_risk_score": 67.5,
+    "current_risk_class": "High / Critical",
+    "current_congestion": "Moderate",
+    "baseline_metrics": {
+      "close_calls_per_1000": 7.9,
+      "avg_approach_speed_kmh": 44.0,
+      "max_queue_length_m": 58.0
+    },
+    "post_intervention_projection": {
+      "projected_risk_score": 41.0,
+      "projected_close_calls_per_1000": 3.0,
+      "estimated_risk_reduction_pct": 39.2
+    },
+    "telemetry": {
+      "vehicle_count": 64,
+      "avg_speed_kmh": 42.5,
+      "queue_length_m": 55.0,
+      "pedestrian_count": 58,
+      "close_call_count": 4,
+      "rain_intensity_mmh": 0.0,
+      "visibility_meters": 5000.0,
+      "hour_of_day": 12,
+      "road_damage_severity": 3,
+      "is_school_hour": 0,
+      "road_closure_active": 0,
+      "construction_active": 0,
+      "camera_status": "ONLINE",
+      "contrast_index": 70.0,
+      "brightness_index": 72.0
+    },
+    "evidence_sources": [
+      {
+        "type": "ROAD_DAMAGE_DETECTION",
+        "source_id": "RDD-YOLO-032",
+        "timestamp": "2026-10-31T10:45:00Z",
+        "factor": "road_damage_severity",
+        "metric_value": "Severity 3 Pothole Cluster (35cm depth / edge break)",
+        "anonymized": true,
+        "clip_ref": "damage_thumb_hs04.jpg"
+      }
+    ],
+    "top_factors": [
+      {"factor": "road_damage_severity", "label": "Severe Potholes / Edge Break", "shap_value": 4.60, "direction": "+Risk"},
+      {"factor": "close_call_count", "label": "Near-Miss Swerve Conflicts", "shap_value": 3.40, "direction": "+Risk"}
+    ],
+    "recommendation": {
+      "rule_id": "INT-008",
+      "title": "Immediate Cold-Mix Asphalt Patching & High-Priority Work Order",
+      "category": "Road Maintenance",
+      "estimated_risk_reduction_pct": 26.0,
+      "why_dangerous": "Deep edge-break and potholes cause sudden severe two-wheeler swerving, loss of balance, and vehicle tire rupture.",
+      "recommended_fix": "Dispatch fast-response maintenance squad for cold-lay polymer modified asphalt compaction within 24 hours, followed by structural mill-and-fill.",
+      "verification_metric": "Automated post-repair road scan re-verification index with zero D40/D20 depressions remaining.",
+      "assumption": "IRC:SP:98-2013 patch durability standards applied."
+    },
+    "public_warning_tag": "Severe Pothole Cluster - Avoid Swerving",
+    "responsible_body": "BBMP Road Maintenance Division (South)"
+  },
+  {
+    "id": "HS-05",
+    "name": "Hebbal Flyover Transition Loop",
+    "lat": 13.0358,
+    "lng": 77.5970,
+    "junction_type": "Elevated Grade Separator",
+    "road_type_code": 0,
+    "road_type": "Arterial Highway",
+    "lanes": 6,
+    "distance_to_school_m": 520.0,
+    "school_name": "Sindhi High School",
+    "distance_to_hospital_m": 190.0,
+    "hospital_name": "Bangalore Baptist Hospital",
+    "status": "APPROVED",
+    "approved_by": "Officer Rajesh K. (ID #4092)",
+    "approved_at": "2026-10-29T14:20:00Z",
+    "rejection_reason": null,
+    "current_risk_score": 71.0,
+    "current_risk_class": "High / Critical",
+    "current_congestion": "Congested",
+    "baseline_metrics": {
+      "close_calls_per_1000": 9.5,
+      "avg_approach_speed_kmh": 64.0,
+      "max_queue_length_m": 110.0
+    },
+    "post_intervention_projection": {
+      "projected_risk_score": 46.5,
+      "projected_close_calls_per_1000": 3.8,
+      "estimated_risk_reduction_pct": 34.5
+    },
+    "telemetry": {
+      "vehicle_count": 98,
+      "avg_speed_kmh": 61.2,
+      "queue_length_m": 95.0,
+      "pedestrian_count": 22,
+      "close_call_count": 3,
+      "rain_intensity_mmh": 0.0,
+      "visibility_meters": 4000.0,
+      "hour_of_day": 16,
+      "road_damage_severity": 1,
+      "is_school_hour": 0,
+      "road_closure_active": 0,
+      "construction_active": 0,
+      "camera_status": "ONLINE",
+      "contrast_index": 76.0,
+      "brightness_index": 71.0
+    },
+    "evidence_sources": [
+      {
+        "type": "RADAR_TELEMETRY",
+        "source_id": "RAD-BLR-004",
+        "timestamp": "2026-10-31T11:10:00Z",
+        "factor": "avg_speed_kmh",
+        "metric_value": "61.2 km/h approach to curved ramp",
+        "anonymized": true,
+        "clip_ref": "radar_hebbal.json"
+      },
+      {
+        "type": "OSM_OVERPASS",
+        "source_id": "WAY-OSM-883192",
+        "timestamp": "2026-10-31T06:00:00Z",
+        "factor": "distance_to_hospital_m",
+        "metric_value": "190m to Baptist Hospital Ambulance Gate",
+        "anonymized": true,
+        "clip_ref": "osm_hebbal.json"
+      }
+    ],
+    "top_factors": [
+      {"factor": "distance_to_hospital_m", "label": "Hospital Corridor Block", "shap_value": 4.10, "direction": "+Risk"},
+      {"factor": "avg_speed_kmh", "label": "Excessive Ramp Velocity", "shap_value": 3.80, "direction": "+Risk"},
+      {"factor": "queue_length_m", "label": "Flyover Bottleneck", "shap_value": 2.90, "direction": "+Risk"}
+    ],
+    "recommendation": {
+      "rule_id": "INT-006",
+      "title": "Designate Dynamic Emergency Green Corridor & Left-Turn Free Flow",
+      "category": "Traffic Police / Signal Optimization",
+      "estimated_risk_reduction_pct": 21.0,
+      "why_dangerous": "Spillback queues block emergency ambulance ingress/egress, triggering erratic evasive maneuvers into oncoming lanes.",
+      "recommended_fix": "Implement emergency green-wave preemption on signal controllers and physical bollards preventing queue spilling into ambulance slip lanes.",
+      "verification_metric": "Average emergency response traversal time through the junction under 75 seconds during peak hours.",
+      "assumption": "Green-wave clearance assumptions based on NTCIP 1202 preemption standards."
+    },
+    "public_warning_tag": "Ambulance Corridor Congestion - Keep Left Lane Clear",
+    "responsible_body": "NHAI / Bengaluru Traffic Police"
+  }
+]

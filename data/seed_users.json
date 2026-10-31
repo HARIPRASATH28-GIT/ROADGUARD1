@@ -1,0 +1,26 @@
+[
+  {
+    "id": "USR-TP-001",
+    "email": "hariprasathsTP@gmail.com",
+    "password_plain": "hari",
+    "role": "traffic_police",
+    "full_name": "Hari Prasath (Traffic Operations)",
+    "department": "Traffic Police Command Centre"
+  },
+  {
+    "id": "USR-RS-002",
+    "email": "hariprasathsRS@gmail.com",
+    "password_plain": "hari",
+    "role": "road_safety_officer",
+    "full_name": "Hari Prasath (Road Safety Inspector)",
+    "department": "Karnataka State Road Safety Authority"
+  },
+  {
+    "id": "USR-RM-003",
+    "email": "hariprasathsRM@gmail.com",
+    "password_plain": "hari",
+    "role": "road_maintenance",
+    "full_name": "Hari Prasath (Infrastructure Engineer)",
+    "department": "Bruhat Bengaluru Mahanagara Palike (Roads)"
+  }
+]

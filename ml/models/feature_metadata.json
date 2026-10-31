@@ -1,0 +1,51 @@
+{
+  "features": [
+    "vehicle_count",
+    "avg_speed_kmh",
+    "queue_length_m",
+    "pedestrian_count",
+    "close_call_count",
+    "rain_intensity_mmh",
+    "visibility_meters",
+    "hour_of_day",
+    "distance_to_school_m",
+    "distance_to_hospital_m",
+    "road_type_code",
+    "road_damage_severity",
+    "is_school_hour",
+    "road_closure_active",
+    "construction_active"
+  ],
+  "feature_types": {
+    "vehicle_count": "int",
+    "avg_speed_kmh": "float",
+    "queue_length_m": "float",
+    "pedestrian_count": "int",
+    "close_call_count": "int",
+    "rain_intensity_mmh": "float",
+    "visibility_meters": "float",
+    "hour_of_day": "int",
+    "distance_to_school_m": "float",
+    "distance_to_hospital_m": "float",
+    "road_type_code": "int",
+    "road_damage_severity": "int",
+    "is_school_hour": "int",
+    "road_closure_active": "int",
+    "construction_active": "int"
+  },
+  "road_type_mapping": {
+    "0": "Arterial Highway",
+    "1": "Collector Avenue",
+    "2": "Local Street",
+    "3": "Roundabout Junction",
+    "4": "Multi-leg Unsignalized"
+  },
+  "congestion_classes": {
+    "0": "Free Flow",
+    "1": "Moderate",
+    "2": "Congested",
+    "3": "Gridlock"
+  },
+  "model_type": "XGBoost + SHAP TreeExplainer",
+  "provenance": "SYNTHETIC_DEMO_DATA"
+}
